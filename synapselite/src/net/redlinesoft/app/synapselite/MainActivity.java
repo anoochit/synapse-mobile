@@ -38,7 +38,7 @@ public class MainActivity extends Activity {
 	String TEXT_COLOR, TEXT_BACKGROUND, CLOCK_COLOR, CLOCK_BACKGROUND,TEXT_MARQUEE;
 	String DEFAULT_DATASTORE, DEFAULT_WEBURL, DEFAULT_IMAGEPATH;
 	Boolean TEXT_ENABLE, CLOCK_ENABLE;
-	String DATADIR = Environment.getExternalStorageDirectory().toString();
+	String DATADIR = Environment.getExternalStorageDirectory().toString()+"/Synapse";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
 	}
 	
 	private void checkDataDir() { 
-		File folder = new File(DATADIR+"/Synapse");
+		File folder = new File(DATADIR);
 		if (!folder.exists()) {
 			folder.mkdirs();
 		}
@@ -182,10 +182,10 @@ public class MainActivity extends Activity {
 		DEFAULT_DATASTORE = pref.getString("DataSource", "image");
 		
 		// web url
-		DEFAULT_WEBURL = pref.getString("WebSiteURL", "http://www.ucview.com/images/las-vegas-digital-signage.jpg");
+		DEFAULT_WEBURL = pref.getString("WebSiteURL", "https://demo.geckoboard.com/dashboard/D66E964F5F044B85");
 		
 		// image slideshow path
-		DEFAULT_IMAGEPATH = pref.getString("ImagePath", DATADIR + "/Synapse/");
+		DEFAULT_IMAGEPATH = pref.getString("ImagePath", DATADIR);
 
 	}
 	

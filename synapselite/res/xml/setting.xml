@@ -75,7 +75,7 @@
         android:summary="@string/pref_cat_sum_website"
         android:title="@string/pref_cat_website" >
         <EditTextPreference
-            android:defaultValue="http://www.ucview.com/images/las-vegas-digital-signage.jpg"
+            android:defaultValue="https://demo.geckoboard.com/dashboard/D66E964F5F044B85"
             android:key="WebSiteURL"
             android:summary="@string/pref_sum_website_url"
             android:title="@string/pref_website_url" />
