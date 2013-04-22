@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:summary="@string/pref_cat_datastore"
+        android:title="@string/pref_cat_datastore" >
+        <ListPreference
+            android:defaultValue="image"
+            android:entries="@array/datasource"
+            android:entryValues="@array/datasource_value"
+            android:key="DataSource"
+            android:summary="@string/pref_sum_datasource"
+            android:title="@string/pref_datasource" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="@string/pref_cat_sum_text"
+        android:title="@string/pref_cat_text" >
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="EnableTextMarquee"
+            android:summary="@string/pref_sum_endable_text_marquee"
+            android:title="@string/pref_enable_text_marquee" />
+
+        <EditTextPreference
+            android:defaultValue="*** This is a example text message, click at clock to set your own text ***"
+            android:dependency="EnableTextMarquee"
+            android:key="TextMarquee"
+            android:summary="@string/pref_sum_text_marquee"
+            android:title="@string/pref_text_marquee" />
+
+        <ListPreference
+            android:defaultValue="#FFFFFF"
+            android:dependency="EnableTextMarquee"
+            android:entries="@array/pref_color"
+            android:entryValues="@array/pref_color_value"
+            android:key="TextColor"
+            android:summary="@string/pref_sum_text_color"
+            android:title="@string/pref_text_color" />
+        <ListPreference
+            android:defaultValue="#0000FF"
+            android:dependency="EnableTextMarquee"
+            android:entries="@array/pref_color"
+            android:entryValues="@array/pref_color_value"
+            android:key="TextColorBackground"
+            android:summary="@string/pref_sum_text_color_background"
+            android:title="@string/pref_text_color_background" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="@string/pref_cat_sum_clock"
+        android:title="@string/pref_cat_clock" >
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="EnableClock"
+            android:summary="@string/pref_sum_enable_clock"
+            android:title="@string/pref_enable_clock"/>
+
+        <ListPreference
+            android:defaultValue="#000000"
+            android:dependency="EnableClock"
+            android:entries="@array/pref_color"
+            android:entryValues="@array/pref_color_value"
+            android:key="ClockTextColor"
+            android:summary="@string/pref_sum_clock_text_color"
+            android:title="@string/pref_clock_text_color" />
+        <ListPreference
+            android:defaultValue="#FFFFFF"
+            android:dependency="EnableClock"
+            android:entries="@array/pref_color"
+            android:entryValues="@array/pref_color_value"
+            android:key="ClockTextColorBackground"
+            android:summary="@string/pref_sum_clock_text_color_background"
+            android:title="@string/pref_clock_text_color_background" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="@string/pref_cat_sum_website"
+        android:title="@string/pref_cat_website" >
+        <EditTextPreference
+            android:defaultValue="http://www.ucview.com/images/las-vegas-digital-signage.jpg"
+            android:key="WebSiteURL"
+            android:summary="@string/pref_sum_website_url"
+            android:title="@string/pref_website_url" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="@string/pref_sum_cat_imagepath"
+        android:title="@string/pref_cat_imagepath" >
+        <EditTextPreference
+            android:key="ImagePath"
+            android:summary="@string/pref_sum_imagepath"
+            android:title="@string/pref_imagepath" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
