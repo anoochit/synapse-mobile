@@ -1,7 +1,10 @@
 package net.redlinesoft.app.synapselite;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import android.util.Log;
+import android.widget.Toast;
 
 public class SettingActivity extends PreferenceActivity {
 
@@ -10,6 +13,8 @@ public class SettingActivity extends PreferenceActivity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		addPreferencesFromResource(R.xml.setting);
+
 	}
+
 
 }

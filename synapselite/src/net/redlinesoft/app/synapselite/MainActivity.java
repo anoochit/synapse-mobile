@@ -1,6 +1,10 @@
 package net.redlinesoft.app.synapselite;
 
 import java.io.File;
+import java.io.FilenameFilter;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.ExecutionException;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -8,11 +12,14 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.util.Log;
@@ -39,7 +46,15 @@ public class MainActivity extends Activity {
 	String DEFAULT_DATASTORE, DEFAULT_WEBURL, DEFAULT_IMAGEPATH;
 	Boolean TEXT_ENABLE, CLOCK_ENABLE;
 	String DATADIR = Environment.getExternalStorageDirectory().toString()+"/Synapse";
+	static final int REQUEST_PREFERENCE_CODE = 0;
+	File[] listContent;
 	
+	int CURRENT_ITEM=0;
+	int delay = 1000; 
+    int period = 10000;
+	
+    Timer timer;
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -58,7 +73,7 @@ public class MainActivity extends Activity {
 		setAppeareance();
 
 		// load data from external storage
-		loadContent(DEFAULT_DATASTORE);
+		listContent=loadContent(DEFAULT_DATASTORE);
 		
 		// play content
 		playContent(DEFAULT_DATASTORE);
@@ -69,7 +84,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				// load setting preference
 				Intent intent = new Intent(getApplicationContext(),	SettingActivity.class);
-				startActivity(intent);
+				startActivityForResult(intent, REQUEST_PREFERENCE_CODE);
 			}
 		});
 	}
@@ -81,10 +96,20 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	private void loadContent(String ds) {
+	private File[] loadContent(String ds) {
+		File[] files = null;
 		if (ds.contentEquals("image")) {
+			Log.d("LOG","load image list...");
+			File imagePath = new File(DEFAULT_IMAGEPATH);
+			files = imagePath.listFiles(new FilenameFilter() {				
+				@Override
+				public boolean accept(File dir, String name) {
+					return name.toLowerCase().endsWith(".png") || name.toLowerCase().endsWith(".jpg");
+				}
+			});
 			
 		}
+		return files;
 	}
 	
 	private void playContent(String ds) {	
@@ -131,10 +156,45 @@ public class MainActivity extends Activity {
 		if (ds.contentEquals("image")){			
 			imageView.setVisibility(View.VISIBLE);
 			webView.setVisibility(View.INVISIBLE);
+			
+			try {
+				// start play image			
+				final Handler mHandler = new Handler();
+				final Runnable mUpdateResults = new Runnable() {
+		            public void run() {
+		            	Log.d("LOG","Play image item = " + String.valueOf(CURRENT_ITEM) + "/" + String.valueOf(listContent.length));
+		            	File imgFile = new  File(DEFAULT_IMAGEPATH + "/" + listContent[CURRENT_ITEM].getName().toString());
+		            	if(imgFile.exists()){
+		            	    Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+		            	    imageView.setImageBitmap(myBitmap);
+		            	    CURRENT_ITEM++; 
+		            	}		            	 
+		            	if (listContent.length<=CURRENT_ITEM) {
+		            		CURRENT_ITEM=0;
+		            	}
+		            }
+		        };
+				timer = new Timer();
+				timer.scheduleAtFixedRate(new TimerTask() {
+					public void run() {
+						mHandler.post(mUpdateResults);
+					}
+				}, delay, period);
+			} catch (Exception e) {
+				Toast.makeText(getApplicationContext(),R.string.alert_no_file_in_playlist, Toast.LENGTH_SHORT).show();
+			}
 		}
 		
 	}
  
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		super.onBackPressed();
+		finish();
+		android.os.Process.killProcess(android.os.Process.myPid());
+	}
+
 	private void initWidget() {
 		// view mapping
 		txtMarquee = (TextView) findViewById(R.id.MarqueeText);
@@ -199,21 +259,26 @@ public class MainActivity extends Activity {
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		// load default and set properties
-		loadSharePreference();
-		// set appearance
-		setAppeareance();
-		// load data from external storage
-		loadContent(DEFAULT_DATASTORE);
-		// play content
-		playContent(DEFAULT_DATASTORE);
+		
 	}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
-		
+		// Log.d("LOG", "on activity result");
+		if (requestCode == REQUEST_PREFERENCE_CODE) {
+			// Log.d("LOG", "get result");
+			timer.cancel();
+			// load default and set properties
+			loadSharePreference();
+			// set appearance
+			setAppeareance();
+			// load data from external storage
+			loadContent(DEFAULT_DATASTORE);
+			// play content
+			playContent(DEFAULT_DATASTORE);
+		}
 	}
 
 	@Override

@@ -10,6 +10,7 @@
     <string name="pref_sum_text_marquee">Set message text to display</string>
 
     <string-array name="pref_color">
+        <item name="none">None</item>
         <item name="blue">Blue</item>
         <item name="black">Black</item>
         <item name="white">White</item>
@@ -22,6 +23,7 @@
         <item name="darkblue">Dark Blue</item>
     </string-array>
     <string-array name="pref_color_value">
+        <item name="none">#00000000</item>
         <item name="blue">#0000FF</item>
         <item name="black">#000000</item>
         <item name="white">#FFFFFF</item>
@@ -72,5 +74,6 @@
         <string name="alert">Alert</string>
         <string name="bnt_setting">Setting...</string>
         <string name="bnt_cancel">Cancel</string>
+        <string name="alert_no_file_in_playlist">No file in playlist, please copy image file or select new image directory.</string>
 
 </resources>
