@@ -9,6 +9,7 @@ import java.io.OutputStream;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -30,6 +31,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -63,6 +66,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		 
 
 		// init widget
 		initWidget();
@@ -84,7 +88,7 @@ public class MainActivity extends Activity {
 		
 		// play content
 		playContent(DEFAULT_DATASTORE);
-
+		
 		// setting listener		
 		digiClock.setOnClickListener(new OnClickListener() {
 			@Override
@@ -215,7 +219,7 @@ public class MainActivity extends Activity {
 				// start play image			
 				final Handler mHandler = new Handler();
 				final Runnable mUpdateResults = new Runnable() {
-		            public void run() {
+		            public void run() {		            	
 		            	Log.d("LOG","Play image item = " + String.valueOf(CURRENT_ITEM) + "/" + String.valueOf(listContent.length));
 		            	File imgFile = new  File(DEFAULT_IMAGEPATH + "/" + listContent[CURRENT_ITEM].getName().toString());
 		            	if(imgFile.exists()){
@@ -248,7 +252,7 @@ public class MainActivity extends Activity {
 		finish();
 		android.os.Process.killProcess(android.os.Process.myPid());
 	}
-
+  
 	private void initWidget() {
 		// view mapping
 		txtMarquee = (TextView) findViewById(R.id.MarqueeText);
@@ -257,7 +261,7 @@ public class MainActivity extends Activity {
 		imageView = (ImageView) findViewById(R.id.imageView);
 		imageView.setImageResource(R.drawable.synapse);
 		// preference mapping
-		pref = PreferenceManager.getDefaultSharedPreferences(this);		
+		pref = PreferenceManager.getDefaultSharedPreferences(this);
 	}
 
 	private void setAppeareance() {
