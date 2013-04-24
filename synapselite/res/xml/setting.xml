@@ -13,6 +13,23 @@
             android:title="@string/pref_datasource" />
     </PreferenceCategory>
     <PreferenceCategory
+        android:summary="@string/pref_cat_sum_website"
+        android:title="@string/pref_cat_website" >
+        <EditTextPreference
+            android:defaultValue="https://demo.geckoboard.com/dashboard/D66E964F5F044B85"
+            android:key="WebSiteURL"
+            android:summary="@string/pref_sum_website_url"
+            android:title="@string/pref_website_url" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:summary="@string/pref_sum_cat_imagepath"
+        android:title="@string/pref_cat_imagepath" >
+        <EditTextPreference
+            android:key="ImagePath"
+            android:summary="@string/pref_sum_imagepath"
+            android:title="@string/pref_imagepath" />
+    </PreferenceCategory>
+    <PreferenceCategory
         android:summary="@string/pref_cat_sum_text"
         android:title="@string/pref_cat_text" >
         <CheckBoxPreference
@@ -52,7 +69,7 @@
             android:defaultValue="1"
             android:key="EnableClock"
             android:summary="@string/pref_sum_enable_clock"
-            android:title="@string/pref_enable_clock"/>
+            android:title="@string/pref_enable_clock" />
 
         <ListPreference
             android:defaultValue="#000000"
@@ -71,22 +88,13 @@
             android:summary="@string/pref_sum_clock_text_color_background"
             android:title="@string/pref_clock_text_color_background" />
     </PreferenceCategory>
-    <PreferenceCategory
-        android:summary="@string/pref_cat_sum_website"
-        android:title="@string/pref_cat_website" >
+    <PreferenceCategory android:title="@string/pref_cat_about" >
         <EditTextPreference
-            android:defaultValue="https://demo.geckoboard.com/dashboard/D66E964F5F044B85"
-            android:key="WebSiteURL"
-            android:summary="@string/pref_sum_website_url"
-            android:title="@string/pref_website_url" />
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:summary="@string/pref_sum_cat_imagepath"
-        android:title="@string/pref_cat_imagepath" >
+            android:key="AppVersion"         
+            android:title="@string/pref_version" android:selectable="false"/>
         <EditTextPreference
-            android:key="ImagePath"
-            android:summary="@string/pref_sum_imagepath"
-            android:title="@string/pref_imagepath" />
+            android:key="DeviceID"   
+            android:title="@string/pref_device" android:selectable="false"/>
     </PreferenceCategory>
 
 </PreferenceScreen>

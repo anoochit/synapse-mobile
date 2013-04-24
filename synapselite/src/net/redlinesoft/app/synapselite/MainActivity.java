@@ -1,10 +1,13 @@
 package net.redlinesoft.app.synapselite;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FilenameFilter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.ExecutionException;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -12,6 +15,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -62,9 +66,12 @@ public class MainActivity extends Activity {
 
 		// init widget
 		initWidget();
-		
+				
 		// check datadir
 		checkDataDir();
+		
+		// first run
+		firstRun();
 		
 		// load default and set properties
 		loadSharePreference();
@@ -89,6 +96,54 @@ public class MainActivity extends Activity {
 		});
 	}
 	
+	private void firstRun() {		
+        boolean firstrun = pref.getBoolean("firstrun", true);
+        if (firstrun) { // Checks to see if we've ran the application b4
+            SharedPreferences.Editor e = pref.edit();
+            e.putBoolean("firstrun", false);
+            e.commit();
+            copyAsset();
+        }
+	}
+
+	private void copyAsset() { 
+		AssetManager assetManager = getAssets();
+        String[] files = null;
+        try {
+            files = assetManager.list("");
+        } catch (IOException e) {
+            Log.e("tag", e.getMessage());
+        }
+        for (int i = 0; i < files.length; i++) {
+            InputStream in = null;
+            OutputStream out = null;
+            try {
+                in = assetManager.open(files[i]);
+                out = new FileOutputStream(DATADIR + "/" + files[i]);
+                copyFile(in, out);
+                in.close();
+                in = null;
+                out.flush();
+                out.close();
+                out = null;
+            } catch (Exception e) {
+                Log.e("tag", e.getMessage());
+            }
+        }
+	}
+
+	private void copyFile(InputStream in, OutputStream out) {
+		byte[] buffer = new byte[1024];
+		int read;
+		try {
+			while ((read = in.read(buffer)) != -1) {
+				out.write(buffer, 0, read);
+			}	
+		} catch (Exception e) {
+			Log.e("tag", e.getMessage());
+		}
+	}
+
 	private void checkDataDir() { 
 		File folder = new File(DATADIR);
 		if (!folder.exists()) {
@@ -157,7 +212,7 @@ public class MainActivity extends Activity {
 			imageView.setVisibility(View.VISIBLE);
 			webView.setVisibility(View.INVISIBLE);
 			
-			try {
+			 if ((listContent !=null)) {
 				// start play image			
 				final Handler mHandler = new Handler();
 				final Runnable mUpdateResults = new Runnable() {
@@ -180,7 +235,7 @@ public class MainActivity extends Activity {
 						mHandler.post(mUpdateResults);
 					}
 				}, delay, period);
-			} catch (Exception e) {
+			} else {
 				Toast.makeText(getApplicationContext(),R.string.alert_no_file_in_playlist, Toast.LENGTH_SHORT).show();
 			}
 		}
@@ -269,13 +324,15 @@ public class MainActivity extends Activity {
 		// Log.d("LOG", "on activity result");
 		if (requestCode == REQUEST_PREFERENCE_CODE) {
 			// Log.d("LOG", "get result");
-			timer.cancel();
+			if (timer != null) {
+				timer.cancel();
+			}
 			// load default and set properties
 			loadSharePreference();
 			// set appearance
 			setAppeareance();
 			// load data from external storage
-			loadContent(DEFAULT_DATASTORE);
+			listContent=loadContent(DEFAULT_DATASTORE);
 			// play content
 			playContent(DEFAULT_DATASTORE);
 		}
