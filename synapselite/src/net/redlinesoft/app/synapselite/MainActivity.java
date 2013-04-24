@@ -178,8 +178,7 @@ public class MainActivity extends Activity {
 				WebSettings webSettings = webView.getSettings();
 				webView.getSettings().setJavaScriptEnabled(true);
 				webView.getSettings().setPluginsEnabled(true);
-				webView.getSettings().setAllowFileAccess(true);
-				
+				webView.getSettings().setAllowFileAccess(true);				
 				webView.setWebViewClient(new WebViewClient() {
 					@Override
 					public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -287,21 +286,16 @@ public class MainActivity extends Activity {
 		TEXT_COLOR = pref.getString("TextColor", "#FFFFFF");
 		TEXT_BACKGROUND = pref.getString("TextColorBackground", "#0000FF");
 		TEXT_MARQUEE = pref.getString("TextMarquee","*** This is a example text message, click at clock to set your own text ***");
-		
 		// clock
 		CLOCK_ENABLE = pref.getBoolean("EnableClock", true);
 		CLOCK_COLOR = pref.getString("ClockTextColor", "#000000");
 		CLOCK_BACKGROUND = pref.getString("ClockTextColorBackground", "#FFFFFF");
-		
 		// default data store
 		DEFAULT_DATASTORE = pref.getString("DataSource", "image");
-		
 		// web url
 		DEFAULT_WEBURL = pref.getString("WebSiteURL", "https://demo.geckoboard.com/dashboard/D66E964F5F044B85");
-		
 		// image slideshow path
 		DEFAULT_IMAGEPATH = pref.getString("ImagePath", DATADIR);
-
 	}
 	
 	private boolean isNetworkAvailable() {
@@ -313,8 +307,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
-		super.onResume();
-		
+		super.onResume();		
 	}
 
 	@Override
