@@ -284,12 +284,12 @@ public class MainActivity extends Activity {
 		// text marquee		
 		TEXT_ENABLE = pref.getBoolean("EnableTextMarquee", true);
 		TEXT_COLOR = pref.getString("TextColor", "#FFFFFF");
-		TEXT_BACKGROUND = pref.getString("TextColorBackground", "#0000FF");
+		TEXT_BACKGROUND = pref.getString("TextColorBackground", "#00000000");
 		TEXT_MARQUEE = pref.getString("TextMarquee","*** This is a example text message, click at clock to set your own text ***");
 		// clock
 		CLOCK_ENABLE = pref.getBoolean("EnableClock", true);
-		CLOCK_COLOR = pref.getString("ClockTextColor", "#000000");
-		CLOCK_BACKGROUND = pref.getString("ClockTextColorBackground", "#FFFFFF");
+		CLOCK_COLOR = pref.getString("ClockTextColor", "#FFFFFF");
+		CLOCK_BACKGROUND = pref.getString("ClockTextColorBackground", "#00000000");
 		// default data store
 		DEFAULT_DATASTORE = pref.getString("DataSource", "image");
 		// web url
