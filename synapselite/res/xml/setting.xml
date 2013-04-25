@@ -54,7 +54,7 @@
             android:summary="@string/pref_sum_text_color"
             android:title="@string/pref_text_color" />
         <ListPreference
-            android:defaultValue="#0000FF"
+            android:defaultValue="#00000000"
             android:dependency="EnableTextMarquee"
             android:entries="@array/pref_color"
             android:entryValues="@array/pref_color_value"
@@ -72,7 +72,7 @@
             android:title="@string/pref_enable_clock" />
 
         <ListPreference
-            android:defaultValue="#000000"
+            android:defaultValue="#FFFFFF"
             android:dependency="EnableClock"
             android:entries="@array/pref_color"
             android:entryValues="@array/pref_color_value"
@@ -80,7 +80,7 @@
             android:summary="@string/pref_sum_clock_text_color"
             android:title="@string/pref_clock_text_color" />
         <ListPreference
-            android:defaultValue="#FFFFFF"
+            android:defaultValue="#00000000"
             android:dependency="EnableClock"
             android:entries="@array/pref_color"
             android:entryValues="@array/pref_color_value"
