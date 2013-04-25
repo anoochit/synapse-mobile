@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Synapse Digital Signage (Lite)</string>
+    <string name="action_settings">ตั้งค่า</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pref_enable_text_marquee">แสดงข้อความวิ่ง</string>
+    <string name="pref_sum_endable_text_marquee">ตั้งค่าข้อความวิ่ง</string>
+    <string name="pref_text_marquee">ข้อความวิ่ง</string>
+    <string name="pref_sum_text_marquee">ตั้งค่าข้อความที่ต้องการให้แสดงผล</string>
+
+    <string-array name="pref_color">
+        <item name="none">ไม่มีสี</item>
+        <item name="blue">น้ำเงิน</item>
+        <item name="black">ดำ</item>
+        <item name="white">ขาว</item>
+        <item name="red">แดง</item>
+        <item name="green">เขียว</item>
+        <item name="purple">ม่วง</item>
+        <item name="yellow">เหลือง</item>
+        <item name="orange">ส้ม</item>
+        <item name="gray">เทา</item>
+        <item name="darkblue">น้ำเงินเข้ม</item>
+    </string-array>
+    <string-array name="pref_color_value">
+        <item name="none">#00000000</item>
+        <item name="blue">#0000FF</item>
+        <item name="black">#000000</item>
+        <item name="white">#FFFFFF</item>
+        <item name="red">#FF0000</item>
+        <item name="green">#00FF00</item>
+        <item name="purple">#FF00FF</item>
+        <item name="yellow">#FFFF00</item>
+        <item name="orange">#FFA500</item>
+        <item name="gray">#808080</item>
+        <item name="darkblue">#0000A0</item>
+    </string-array>
+
+    <string name="pref_text_color">สีตัวอักษร</string>
+    <string name="pref_sum_text_color">ตั้งค่าสีตัวอักษร</string>
+    <string name="pref_text_color_background">ตั้งค่าสีพื้นหลัง</string>
+    <string name="pref_sum_text_color_background">ตั้งค่าสีพื้นหลัง</string>
+    <string name="pref_cat_text">ตั้งค่าการแสดงผลข้อความวิ่ง</string>
+    <string name="pref_cat_clock">ตั้งค่าการแสดงผลนาฬิกา</string>
+    <string name="pref_enable_clock">แสดงนาฬิกา</string>
+    <string name="pref_clock_text_color">ตั้งค่าสีตัวอักษร</string>
+    <string name="pref_sum_enable_clock">ตั้งค่าการแสดงนาฬิกา</string>
+    <string name="pref_sum_clock_text_color">ตั้งค่าสีตัวอักษร</string>
+    <string name="pref_clock_text_color_background">ตั้งค่าสีพื้นหลัง</string>
+    <string name="pref_sum_clock_text_color_background">ตั้งค่าสีพื้นหลัง</string>
+    <string name="pref_cat_website">ตั้งค่าเว็บไซต์</string>
+    <string name="pref_cat_sum_text">ตั้งค่าข้อความวิ่ง</string>
+    <string name="pref_cat_sum_clock">ตั้งค่าการแสดงผลนาฬิกา</string>
+    <string name="pref_cat_sum_website">ตั้งค่าการแสดงผลเว็บไซต์</string>
+    <string name="pref_website_url">ที่อยู่เว็บไซต์</string>
+
+    <string-array name="datasource">
+        <item>เว็บไซต์</item>
+        <item>รูปภาพ</item>
+    </string-array>
+    <string-array name="datasource_value">
+        <item>web</item>
+        <item>image</item>
+    </string-array>
+        <string name="pref_datasource">แหล่งข้อมูล</string>
+        <string name="pref_sum_datasource">ตั้งค่าเรียกใช้แหล่งข้อมูล</string>
+        <string name="pref_sum_website_url">ตั้งค่าที่อยู่เว็บไซต์</string>
+        <string name="pref_imagepath">ที่อยู่รูปภาพ</string>
+        <string name="pref_sum_imagepath">ตั้งค่าพาร์ทระบุที่อยู่รูปภาพ</string>
+        <string name="pref_cat_imagepath">ตั้งค่าแสดงรูปภาพ</string>
+        <string name="pref_sum_cat_imagepath">ตั้งค่าพาร์ทที่อยู่รูปภาพ</string>
+        <string name="pref_cat_datastore">แหล่งข้อมูล</string>
+        <string name="alert_no_network_connetion">ไม่มีการเชื่อมต่อเน็ตเวิร์ค กรุณาตั้งค่าการเชื่อมต่อเครือข่าย</string>
+        <string name="alert">แจ้งเตือน</string>
+        <string name="bnt_setting">ตั้งค่า...</string>
+        <string name="bnt_cancel">ยกเลิก</string>
+        <string name="alert_no_file_in_playlist">ไม่มีไฟล์ในรายการเล่น, กรุณาคัดลอกไฟล์ภาพไปยังพาร์ทที่กำหนด</string>
+        <string name="pref_cat_about">เกี่ยวกับ</string>
+        <string name="pref_version">รุ่น </string>
+        <string name="pref_device">รหัสอุปกรณ์</string>
+
+</resources>
