@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.redlinesoft.app.synapselite"
-    android:versionCode="1"
+    android:versionCode="12"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="10"
         android:targetSdkVersion="17" />
 
-    <supports-screens android:smallScreens="false" />
-    <supports-screens android:normalScreens="false" />
     <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true" />
-    <supports-screens
-        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:smallScreens="false"
         android:xlargeScreens="true" />
 
     <uses-permission android:name="android.permission.INTERNET" />
