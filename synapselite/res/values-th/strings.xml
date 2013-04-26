@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Synapse Digital Signage (Lite)</string>
+    <string name="app_name">Synapse (Lite)</string>
     <string name="action_settings">ตั้งค่า</string>
     <string name="hello_world">Hello world!</string>
     <string name="pref_enable_text_marquee">แสดงข้อความวิ่ง</string>
     <string name="pref_sum_endable_text_marquee">ตั้งค่าข้อความวิ่ง</string>
     <string name="pref_text_marquee">ข้อความวิ่ง</string>
-    <string name="pref_sum_text_marquee">ตั้งค่าข้อความที่ต้องการให้แสดงผล</string>
+    <string name="pref_sum_text_marquee">ตั้งค่าข้อความวิ่ง</string>
 
     <string-array name="pref_color">
         <item name="none">ไม่มีสี</item>
@@ -51,7 +51,7 @@
     <string name="pref_cat_website">ตั้งค่าเว็บไซต์</string>
     <string name="pref_cat_sum_text">ตั้งค่าข้อความวิ่ง</string>
     <string name="pref_cat_sum_clock">ตั้งค่าการแสดงผลนาฬิกา</string>
-    <string name="pref_cat_sum_website">ตั้งค่าการแสดงผลเว็บไซต์</string>
+    <string name="pref_cat_sum_website">ตั้งค่าแสดงผลเว็บไซต์</string>
     <string name="pref_website_url">ที่อยู่เว็บไซต์</string>
 
     <string-array name="datasource">
@@ -66,7 +66,7 @@
         <string name="pref_sum_datasource">ตั้งค่าเรียกใช้แหล่งข้อมูล</string>
         <string name="pref_sum_website_url">ตั้งค่าที่อยู่เว็บไซต์</string>
         <string name="pref_imagepath">ที่อยู่รูปภาพ</string>
-        <string name="pref_sum_imagepath">ตั้งค่าพาร์ทระบุที่อยู่รูปภาพ</string>
+        <string name="pref_sum_imagepath">ตั้งค่าที่อยู่รูปภาพ</string>
         <string name="pref_cat_imagepath">ตั้งค่าแสดงรูปภาพ</string>
         <string name="pref_sum_cat_imagepath">ตั้งค่าพาร์ทที่อยู่รูปภาพ</string>
         <string name="pref_cat_datastore">แหล่งข้อมูล</string>
@@ -76,7 +76,8 @@
         <string name="bnt_cancel">ยกเลิก</string>
         <string name="alert_no_file_in_playlist">ไม่มีไฟล์ในรายการเล่น, กรุณาคัดลอกไฟล์ภาพไปยังพาร์ทที่กำหนด</string>
         <string name="pref_cat_about">เกี่ยวกับ</string>
-        <string name="pref_version">รุ่น </string>
+        <string name="pref_version">รุ่น</string>
         <string name="pref_device">รหัสอุปกรณ์</string>
+        <string name="detault_text_marquee">*** นี่คือตัวอย่างข้อความวิ่ง คลิกที่นาฬิกาด้านข้าง เพื่อเข้าสู่การตั้งค่า ***</string>
 
 </resources>

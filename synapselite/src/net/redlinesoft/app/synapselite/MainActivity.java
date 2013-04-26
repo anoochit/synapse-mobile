@@ -66,8 +66,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		 
-
+		
 		// init widget
 		initWidget();
 				
@@ -101,11 +100,15 @@ public class MainActivity extends Activity {
 	}
 	
 	private void firstRun() {		
+
         boolean firstrun = pref.getBoolean("firstrun", true);
-        if (firstrun) { // Checks to see if we've ran the application b4
+        if (firstrun) {
+        	Log.d("LOG","first run...");
+    		// check first run 
             SharedPreferences.Editor e = pref.edit();
             e.putBoolean("firstrun", false);
-            e.commit();
+            e.commit();            
+            // copy asset
             copyAsset();
         }
 	}
@@ -289,7 +292,7 @@ public class MainActivity extends Activity {
 		TEXT_ENABLE = pref.getBoolean("EnableTextMarquee", true);
 		TEXT_COLOR = pref.getString("TextColor", "#FFFFFF");
 		TEXT_BACKGROUND = pref.getString("TextColorBackground", "#00000000");
-		TEXT_MARQUEE = pref.getString("TextMarquee","*** This is a example text message, click at clock to set your own text ***");
+		TEXT_MARQUEE = pref.getString("TextMarquee",getString(R.string.detault_text_marquee));
 		// clock
 		CLOCK_ENABLE = pref.getBoolean("EnableClock", true);
 		CLOCK_COLOR = pref.getString("ClockTextColor", "#FFFFFF");

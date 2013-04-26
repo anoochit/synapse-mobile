@@ -27,7 +27,7 @@
         <EditTextPreference
             android:key="ImagePath"
             android:summary="@string/pref_sum_imagepath"
-            android:title="@string/pref_imagepath" />
+            android:title="@string/pref_imagepath" android:defaultValue="/sdcard/Synapse"/>
     </PreferenceCategory>
     <PreferenceCategory
         android:summary="@string/pref_cat_sum_text"
@@ -39,11 +39,12 @@
             android:title="@string/pref_enable_text_marquee" />
 
         <EditTextPreference
-            android:defaultValue="*** This is a example text message, click at clock to set your own text ***"
             android:dependency="EnableTextMarquee"
             android:key="TextMarquee"
             android:summary="@string/pref_sum_text_marquee"
-            android:title="@string/pref_text_marquee" />
+            android:title="@string/pref_text_marquee" 
+            android:defaultValue="@string/detault_text_marquee"
+            />
 
         <ListPreference
             android:defaultValue="#FFFFFF"
@@ -69,11 +70,10 @@
             android:defaultValue="1"
             android:key="EnableClock"
             android:summary="@string/pref_sum_enable_clock"
-            android:title="@string/pref_enable_clock" />
+            android:title="@string/pref_enable_clock" android:enabled="false"/>
 
         <ListPreference
             android:defaultValue="#FFFFFF"
-            android:dependency="EnableClock"
             android:entries="@array/pref_color"
             android:entryValues="@array/pref_color_value"
             android:key="ClockTextColor"
@@ -81,7 +81,6 @@
             android:title="@string/pref_clock_text_color" />
         <ListPreference
             android:defaultValue="#00000000"
-            android:dependency="EnableClock"
             android:entries="@array/pref_color"
             android:entryValues="@array/pref_color_value"
             android:key="ClockTextColorBackground"
