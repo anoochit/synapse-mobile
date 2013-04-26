@@ -22,6 +22,17 @@
   <defs
      id="defs4">
     <linearGradient
+       id="linearGradient3805">
+      <stop
+         style="stop-color:#b6b6b6;stop-opacity:1;"
+         offset="0"
+         id="stop3807" />
+      <stop
+         style="stop-color:#b3b3b3;stop-opacity:0;"
+         offset="1"
+         id="stop3809" />
+    </linearGradient>
+    <linearGradient
        id="linearGradient3867">
       <stop
          style="stop-color:#828282;stop-opacity:1;"
@@ -73,6 +84,31 @@
          stdDeviation="7.8796169"
          id="feGaussianBlur3885" />
     </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3815-4"
+       id="linearGradient3873-8"
+       x1="-555.87408"
+       y1="852.59845"
+       x2="-79.817383"
+       y2="852.59845"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0201156,0,0,1.0201156,1117.1224,-1126.4956)" />
+    <linearGradient
+       id="linearGradient3815-4">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop3817-6" />
+      <stop
+         id="stop3823-4"
+         offset="0.47945204"
+         style="stop-color:#000000;stop-opacity:0.76923078;" />
+      <stop
+         style="stop-color:#5f5f5f;stop-opacity:1;"
+         offset="1"
+         id="stop3819-7" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -81,14 +117,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="0.17305857"
-     inkscape:cy="253.21225"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="456.54971"
+     inkscape:cy="233.84776"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="667"
+     inkscape:window-width="1600"
+     inkscape:window-height="799"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
@@ -100,7 +136,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -148,6 +184,19 @@
          id="path3858"
          inkscape:connector-curvature="0" />
     </g>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.49382715999999999"
+       id="rect2985-2-5"
+       width="474.52115"
+       height="472.32758"
+       x="-1030.5186"
+       y="-492.17111"
+       rx="41.428555"
+       ry="41.428555"
+       transform="matrix(0,-1,-1,0,0,0)"
+       inkscape:export-filename="/home/xavier/project/github-project/synapse-mobile/design/icon.png"
+       inkscape:export-xdpi="149.97072"
+       inkscape:export-ydpi="149.97072" />
     <g
        style="font-size:439.89486694px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
        id="text3811-1"
