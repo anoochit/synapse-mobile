@@ -37,7 +37,9 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.DigitalClock;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -61,6 +63,8 @@ public class MainActivity extends Activity {
     int period = 10000;
 	
     Timer timer;
+    
+    FrameLayout overlayInstruction;
     
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -110,6 +114,16 @@ public class MainActivity extends Activity {
             e.commit();            
             // copy asset
             copyAsset();
+            // show overlay
+            overlayInstruction = (FrameLayout) findViewById(R.id.overlayInstruction);
+            overlayInstruction.setVisibility(View.VISIBLE);
+            
+            overlayInstruction.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					 overlayInstruction.setVisibility(View.GONE);
+				}
+			});
         }
 	}
 

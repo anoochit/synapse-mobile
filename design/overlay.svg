@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1416.2101"
+   height="1190.7273"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   inkscape:export-filename="/home/xavier/project/github-projects/synapse-mobile/synapselite/res/drawable-th/instruction.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   sodipodi:docname="overlay.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.55596271"
+     inkscape:cx="595.80173"
+     inkscape:cy="758.34019"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="799"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(52.161781,-516.35504)">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="rect3865"
+       width="1416.2101"
+       height="1190.7273"
+       x="-52.161781"
+       y="516.35504"
+       rx="0"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="88.571457"
+       y="875.2193"
+       id="text2985"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="88.571457"
+         y="875.2193"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa Bold">Text Marquee</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:61.78055954px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="297.76758"
+       y="699.90094"
+       id="text3016"
+       sodipodi:linespacing="125%"
+       transform="scale(0.71775914,1.393225)"><tspan
+         sodipodi:role="line"
+         id="tspan3018"
+         x="297.76758"
+         y="699.90094"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa">/</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="932.90857"
+       y="891.6781"
+       id="text2985-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="932.90857"
+         y="891.6781"
+         style="font-size:36px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa Bold"
+         id="tspan3836">Digital Clock</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:61.78055954px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-1598.9646"
+       y="703.84943"
+       id="text3016-6"
+       sodipodi:linespacing="125%"
+       transform="scale(-0.71775915,1.393225)"><tspan
+         sodipodi:role="line"
+         id="tspan3018-6"
+         x="-1598.9646"
+         y="703.84943"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa">/</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:3.15995169;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.47985515, 9.47985515;stroke-dashoffset:0"
+       id="rect3062"
+       width="722.36914"
+       height="118.48316"
+       x="287.53265"
+       y="572.30286"
+       rx="53.563915"
+       ry="48.278519" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="317.99561"
+       y="650.00446"
+       id="text3832"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3834"
+         x="317.99561"
+         y="650.00446"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa Bold">click to close an instruction</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:47.10941315px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="88.691116"
+       y="1461.8312"
+       id="text2985-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2987-0"
+         x="88.691116"
+         y="1461.8312"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa Bold">ข้อความวิ่ง</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:61.78055954px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="248.31305"
+       y="1118.224"
+       id="text3016-8"
+       sodipodi:linespacing="125%"
+       transform="scale(0.71775915,1.393225)"><tspan
+         sodipodi:role="line"
+         id="tspan3018-2"
+         x="248.31305"
+         y="1118.224"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa">/</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:50.14484787px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="897.02869"
+       y="1474.1036"
+       id="text2985-3-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="897.02869"
+         y="1474.1036"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa Bold"
+         id="tspan3836-6">นาฬิกาดิจิตอล</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:61.78055954px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-1549.5101"
+       y="1122.1725"
+       id="text3016-6-2"
+       sodipodi:linespacing="125%"
+       transform="scale(-0.71775915,1.393225)"><tspan
+         sodipodi:role="line"
+         id="tspan3018-6-0"
+         x="-1549.5101"
+         y="1122.1725"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa">/</tspan></text>
+    <rect
+       style="fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-width:3.15995169;stroke-linecap:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.47985515, 9.47985515;stroke-dashoffset:0"
+       id="rect3062-0"
+       width="722.36914"
+       height="118.48316"
+       x="252.03622"
+       y="1155.121"
+       rx="53.563915"
+       ry="48.278519" />
+    <text
+       xml:space="preserve"
+       style="font-size:50.48987198px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="288.17899"
+       y="1237.7375"
+       id="text3832-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3834-5"
+         x="288.17899"
+         y="1237.7375"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;font-family:Purisa;-inkscape-font-specification:Purisa Bold">คลิกที่นี่เพื่อปิดหน้าต่างคำแนะนำ</tspan></text>
+  </g>
+</svg>
