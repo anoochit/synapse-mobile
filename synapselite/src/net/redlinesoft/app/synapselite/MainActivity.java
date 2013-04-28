@@ -115,7 +115,7 @@ public class MainActivity extends Activity {
             // copy asset
             copyAsset();
             // show overlay
-            overlayInstruction = (FrameLayout) findViewById(R.id.overlayInstruction);
+            overlayInstruction = (FrameLayout) findViewById(R.id.overlayImage);
             overlayInstruction.setVisibility(View.VISIBLE);
             
             overlayInstruction.setOnClickListener(new OnClickListener() {
