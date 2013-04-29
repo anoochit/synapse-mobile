@@ -25,9 +25,10 @@
         android:summary="@string/pref_sum_cat_imagepath"
         android:title="@string/pref_cat_imagepath" >
         <EditTextPreference
+            android:defaultValue="/sdcard/Synapse"
             android:key="ImagePath"
             android:summary="@string/pref_sum_imagepath"
-            android:title="@string/pref_imagepath" android:defaultValue="/sdcard/Synapse"/>
+            android:title="@string/pref_imagepath" />
     </PreferenceCategory>
     <PreferenceCategory
         android:summary="@string/pref_cat_sum_text"
@@ -39,12 +40,11 @@
             android:title="@string/pref_enable_text_marquee" />
 
         <EditTextPreference
+            android:defaultValue="@string/detault_text_marquee"
             android:dependency="EnableTextMarquee"
             android:key="TextMarquee"
             android:summary="@string/pref_sum_text_marquee"
-            android:title="@string/pref_text_marquee" 
-            android:defaultValue="@string/detault_text_marquee"
-            />
+            android:title="@string/pref_text_marquee" />
 
         <ListPreference
             android:defaultValue="#FFFFFF"
@@ -68,9 +68,10 @@
         android:title="@string/pref_cat_clock" >
         <CheckBoxPreference
             android:defaultValue="1"
+            android:enabled="false"
             android:key="EnableClock"
             android:summary="@string/pref_sum_enable_clock"
-            android:title="@string/pref_enable_clock" android:enabled="false"/>
+            android:title="@string/pref_enable_clock" />
 
         <ListPreference
             android:defaultValue="#FFFFFF"
@@ -89,11 +90,21 @@
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_cat_about" >
         <EditTextPreference
-            android:key="AppVersion"         
-            android:title="@string/pref_version" android:selectable="false"/>
+            android:key="AppVersion"
+            android:selectable="false"
+            android:title="@string/pref_version" />
         <EditTextPreference
-            android:key="DeviceID"   
-            android:title="@string/pref_device" android:selectable="false"/>
+            android:key="DeviceID"
+            android:selectable="false"
+            android:title="@string/pref_device" />
     </PreferenceCategory>
+    <Preference 
+        android:key="Help"
+        android:summary="@string/pref_sum_help"
+        android:title="@string/pref_help" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://anoochit.github.io/synapse-mobile/" />
+    </Preference>
 
 </PreferenceScreen>

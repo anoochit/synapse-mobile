@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<previews>
+
+    <preview
+        name="Config1"
+        activity="net.redlinesoft.app.synapselite.MainActivity"
+        config="layout-sw800dp-w1280dp-h800dp-xlarge-long-land-notnight-mdpi-finger-keyssoft-nokeys-navhidden-nonav-1280x800-v17"
+        device="10.1in WXGA (Tablet)"
+        devicestate="Landscape"
+        target="Android 4.2.2"
+        theme="@style/AppTheme" >
+    </preview>
+
+</previews>

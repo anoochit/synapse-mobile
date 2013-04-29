@@ -62,22 +62,25 @@
         <item>web</item>
         <item>image</item>
     </string-array>
-        <string name="pref_datasource">Data Source</string>
-        <string name="pref_sum_datasource">Select your default data source</string>
-        <string name="pref_sum_website_url">Set your website URL</string>
-        <string name="pref_imagepath">Set image path</string>
-        <string name="pref_sum_imagepath">Set image path</string>
-        <string name="pref_cat_imagepath">Image slide show</string>
-        <string name="pref_sum_cat_imagepath">Select image path for slideshow</string>
-        <string name="pref_cat_datastore">Data Source</string>
-        <string name="alert_no_network_connetion">No network connection, please setup network connection.</string>
-        <string name="alert">Alert</string>
-        <string name="bnt_setting">Setting...</string>
-        <string name="bnt_cancel">Cancel</string>
-        <string name="alert_no_file_in_playlist">No file in playlist, please copy image file or select new image directory.</string>
-        <string name="pref_cat_about">About</string>
-        <string name="pref_version">Version </string>
-        <string name="pref_device">Device ID </string>
-        <string name="detault_text_marquee">*** This is a example text message, click at clock to set your own text ***</string>
+
+    <string name="pref_datasource">Data Source</string>
+    <string name="pref_sum_datasource">Select your default data source</string>
+    <string name="pref_sum_website_url">Set your website URL</string>
+    <string name="pref_imagepath">Set image path</string>
+    <string name="pref_sum_imagepath">Set image path</string>
+    <string name="pref_cat_imagepath">Image slide show</string>
+    <string name="pref_sum_cat_imagepath">Select image path for slideshow</string>
+    <string name="pref_cat_datastore">Data Source</string>
+    <string name="alert_no_network_connetion">No network connection, please setup network connection.</string>
+    <string name="alert">Alert</string>
+    <string name="bnt_setting">Setting...</string>
+    <string name="bnt_cancel">Cancel</string>
+    <string name="alert_no_file_in_playlist">No file in playlist, please copy image file or select new image directory.</string>
+    <string name="pref_cat_about">About</string>
+    <string name="pref_version">Version </string>
+    <string name="pref_device">Device ID </string>
+    <string name="detault_text_marquee">*** This is a example text message, click at clock to set your own text ***</string>
+    <string name="pref_help">Help</string>
+    <string name="pref_sum_help">Read online manual</string>
 
 </resources>

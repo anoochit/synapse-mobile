@@ -62,22 +62,25 @@
         <item>web</item>
         <item>image</item>
     </string-array>
-        <string name="pref_datasource">ແຫຼ່ງຂໍ້ມູນ</string>
-        <string name="pref_sum_datasource">ກໍານົດແຫຼ່ງຂໍ້ມູນ</string>
-        <string name="pref_sum_website_url">ກໍານົດທີ່ຢູ່ເວັບເວັບໄຊຕ໌</string>
-        <string name="pref_imagepath">ກໍານົດທີ່ຢູ່ຮູບພາບ</string>
-        <string name="pref_sum_imagepath">ກໍານົດທີ່ຢູ່ຮູບພາບ</string>
-        <string name="pref_cat_imagepath">ກໍານົດການສະແດງຮູບພາບ</string>
-        <string name="pref_sum_cat_imagepath">ກໍານົດທີ່ຢູ່ຮູບພາບ</string>
-        <string name="pref_cat_datastore">ແຫຼ່ງຂໍ້ມູນ</string>
-        <string name="alert_no_network_connetion">ການເຊື່ອມຕໍ່ເຄືອຂ່າຍບໍ່ມີ ກະລຸນາກໍານົດການເຊື່ອມຕໍ່ເຄືອຂ່າຍ</string>
-        <string name="alert">ຂໍ້ມູນ</string>
-        <string name="bnt_setting">ກໍານົດ...</string>
-        <string name="bnt_cancel">ຍົກເລີກ</string>
-        <string name="alert_no_file_in_playlist">ໄຟລ໌ບໍ່ມີໃນບັນຊີລາຍການ, ໄຟລ໌ໃນລາຍການບໍ່ມີ, ກະລຸນາສໍາເນົາໄຟລ໌ຮູບພາບຫລືເລືອກທີ່ຢູ່ຮູບພາບໃຫມ່</string>
-        <string name="pref_cat_about">ກ່ຽວກັບ</string>
-        <string name="pref_version">ສະບັບ</string>
-        <string name="pref_device">ລະຫັດອຸປະກອນ</string>
-        <string name="detault_text_marquee">*** ນີ້ແມ່ນຂໍ້ຄວາມຕົວຢ່າງ ກົດທີ່ນາລິກາ ເພື່ອໃຫ້ເຂົ້າກໍານົດໄດ້ ***</string>
+
+    <string name="pref_datasource">ແຫຼ່ງຂໍ້ມູນ</string>
+    <string name="pref_sum_datasource">ກໍານົດແຫຼ່ງຂໍ້ມູນ</string>
+    <string name="pref_sum_website_url">ກໍານົດທີ່ຢູ່ເວັບເວັບໄຊຕ໌</string>
+    <string name="pref_imagepath">ກໍານົດທີ່ຢູ່ຮູບພາບ</string>
+    <string name="pref_sum_imagepath">ກໍານົດທີ່ຢູ່ຮູບພາບ</string>
+    <string name="pref_cat_imagepath">ກໍານົດການສະແດງຮູບພາບ</string>
+    <string name="pref_sum_cat_imagepath">ກໍານົດທີ່ຢູ່ຮູບພາບ</string>
+    <string name="pref_cat_datastore">ແຫຼ່ງຂໍ້ມູນ</string>
+    <string name="alert_no_network_connetion">ການເຊື່ອມຕໍ່ເຄືອຂ່າຍບໍ່ມີ ກະລຸນາກໍານົດການເຊື່ອມຕໍ່ເຄືອຂ່າຍ</string>
+    <string name="alert">ຂໍ້ມູນ</string>
+    <string name="bnt_setting">ກໍານົດ...</string>
+    <string name="bnt_cancel">ຍົກເລີກ</string>
+    <string name="alert_no_file_in_playlist">ໄຟລ໌ບໍ່ມີໃນບັນຊີລາຍການ, ໄຟລ໌ໃນລາຍການບໍ່ມີ, ກະລຸນາສໍາເນົາໄຟລ໌ຮູບພາບຫລືເລືອກທີ່ຢູ່ຮູບພາບໃຫມ່</string>
+    <string name="pref_cat_about">ກ່ຽວກັບ</string>
+    <string name="pref_version">ສະບັບ</string>
+    <string name="pref_device">ລະຫັດອຸປະກອນ</string>
+    <string name="detault_text_marquee">*** ນີ້ແມ່ນຂໍ້ຄວາມຕົວຢ່າງ ກົດທີ່ນາລິກາ ເພື່ອໃຫ້ເຂົ້າກໍານົດໄດ້ ***</string>
+    <string name="pref_help">ຊ່ວຍເຫຼືອ</string>
+    <string name="pref_sum_help">ອ່ານຄູ່ມືການໃຊ້ອອນໄລນ໌</string>
 
 </resources>
