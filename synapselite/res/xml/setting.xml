@@ -88,23 +88,31 @@
             android:summary="@string/pref_sum_clock_text_color_background"
             android:title="@string/pref_clock_text_color_background" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_other" >
+        <Preference
+            android:key="AndroidSetting"
+            android:summary="@string/pref_sum_android_setting"
+            android:title="@string/pref_android_setting" >
+            <intent android:action="android.settings.SETTINGS" />
+        </Preference>
+        <Preference
+            android:key="Help"
+            android:summary="@string/pref_sum_help"
+            android:title="@string/pref_help" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://anoochit.github.io/synapse-mobile/" />
+        </Preference>
+    </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_cat_about" >
-        <EditTextPreference
+        <Preference
             android:key="AppVersion"
             android:selectable="false"
             android:title="@string/pref_version" />
-        <EditTextPreference
+        <Preference
             android:key="DeviceID"
             android:selectable="false"
             android:title="@string/pref_device" />
     </PreferenceCategory>
-    <Preference 
-        android:key="Help"
-        android:summary="@string/pref_sum_help"
-        android:title="@string/pref_help" >
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="http://anoochit.github.io/synapse-mobile/" />
-    </Preference>
 
 </PreferenceScreen>
